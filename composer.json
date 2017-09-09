@@ -1,0 +1,26 @@
+{
+    "name": "danalloway/socket-wrench",
+    "description": "A basic wrapper around PHP's low-level socket abilities.",
+    "type": "library",
+    "homepage": "https://gitlab.com/danalloway/socket-wrench",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dan Alloway",
+            "email": "dan@micahsix.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "DanAlloway\\SocketWrench\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DanAlloway\\SocketWrench\\Tests\\": "tests/"
+        }
+    }
+}

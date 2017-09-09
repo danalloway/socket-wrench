@@ -1,0 +1,10 @@
+image: registry.gitlab.com/danalloway/docker-lmnop
+
+cache:
+  paths:
+    - vendor/
+
+test:app:
+  script:
+    - composer install --no-interaction --quiet
+    - phpunit --configuration phpunit.xml
